@@ -7,112 +7,132 @@
 
 body{
 margin:0;
-font-family:Georgia, serif;
+font-family:Georgia,serif;
 background:#f6efe6;
-color:#3e2f1c;
+color:#3b2b1d;
 }
 
 .topbar{
-background:#e8dcc8;
+background:#e6dfd2;
 padding:8px;
 text-align:center;
 font-size:14px;
 }
 
 .nav{
-display:flex;
-justify-content:center;
-gap:40px;
+background:#6b4a2b;
 padding:15px;
-background:#5b3a1e;
+text-align:center;
 }
 
 .nav a{
 color:white;
+margin:0 20px;
 text-decoration:none;
-font-size:18px;
+font-weight:bold;
 }
 
 .hero{
 display:flex;
 align-items:center;
-justify-content:space-between;
-padding:60px;
-background:url('https://images.unsplash.com/photo-1606787366850-de6330128bfc') center/cover;
-color:white;
+justify-content:center;
+padding:50px 20px;
+background:#fff7ea;
+flex-wrap:wrap;
 }
 
-.hero-left{
-max-width:50%;
+.hero-text{
+max-width:500px;
 }
 
 .hero h1{
-font-size:45px;
+font-size:40px;
 margin:0;
 }
 
 .hero p{
-font-size:20px;
+font-size:18px;
 margin:15px 0;
 }
 
 .btn{
+display:inline-block;
 background:#2e7d32;
 color:white;
 padding:12px 25px;
 text-decoration:none;
-border-radius:5px;
+border-radius:6px;
+margin-top:10px;
+}
+
+.hero img{
+width:420px;
+border-radius:12px;
+margin:20px;
 }
 
 .features{
 display:flex;
-justify-content:space-around;
-padding:40px;
-background:#fffaf3;
+text-align:center;
+background:#f1e6d6;
+padding:30px 10px;
+flex-wrap:wrap;
 }
 
-.box{
-text-align:center;
-width:30%;
+.feature{
+flex:1;
+padding:20px;
+}
+
+.about{
+display:flex;
+align-items:center;
+padding:40px 20px;
+flex-wrap:wrap;
+}
+
+.about img{
+width:420px;
+border-radius:12px;
+margin-left:auto;
 }
 
 .products{
-padding:40px;
 text-align:center;
+padding:40px 20px;
 }
 
-.grid{
+.product-grid{
 display:flex;
-gap:25px;
+gap:20px;
+flex-wrap:wrap;
 justify-content:center;
-margin-top:30px;
 }
 
 .card{
 background:white;
 padding:10px;
 border-radius:10px;
+width:200px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .card img{
-width:200px;
-height:150px;
-object-fit:cover;
+width:100%;
 border-radius:10px;
 }
 
 .order{
-background:#efe2cd;
-padding:40px;
+background:#efe2cf;
 text-align:center;
+padding:40px 20px;
 }
 
 .footer{
-background:#5b3a1e;
+background:#6b4a2b;
 color:white;
 text-align:center;
-padding:20px;
+padding:15px;
 }
 
 </style>
@@ -126,74 +146,81 @@ Meerut, Uttar Pradesh | Call/WhatsApp: 9876543219 | nilohafarmmrt@gmail.com
 
 <div class="nav">
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#">About Us</a>
+<a href="#">Our Products</a>
+<a href="#">Contact Us</a>
 </div>
 
-<div class="hero">
-<div class="hero-left">
+<section class="hero">
+<div class="hero-text">
 <h1>Niloha Farm</h1>
-<p>Organic • Natural • Chemical-Free</p>
+<p><b>Organic • Natural • Chemical-Free</b></p>
+<p>Fresh From Our Family to Yours.</p>
 <a class="btn">Shop Now</a>
 </div>
-</div>
+
+<img src="https://images.unsplash.com/photo-1604908176997-431da93e4baf">
+</section>
 
 <div class="features">
-
-<div class="box">
-<h3>🌿 100% Organic</h3>
-<p>Natural chemical-free products.</p>
+<div class="feature"><h3>100% Organic Products</h3><p>Natural & chemical-free items.</p></div>
+<div class="feature"><h3>Family Owned Farm</h3><p>Direct from farm to home.</p></div>
+<div class="feature"><h3>Health & Purity Assured</h3><p>Pure ingredients only.</p></div>
 </div>
 
-<div class="box">
-<h3>🚜 Family Farm</h3>
-<p>Direct from our farm to your home.</p>
+<section class="about">
+<div>
+<h2>About Niloha Farm</h2>
+<p>Dedicated to providing pure, natural, and chemical-free products straight from our family farm.</p>
+<a class="btn">Learn More</a>
 </div>
 
-<div class="box">
-<h3>❤️ Purity Assured</h3>
-<p>Quality you can trust.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+</section>
 
-</div>
-
-<div class="products">
+<section class="products">
 <h2>Our Products</h2>
 
-<div class="grid">
+<div class="product-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1615486363813-53d6df1e3a5c">
-<p>Haldi</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585238342028-96633bde5b01">
-<p>Aata</p>
+<img src="https://images.unsplash.com/photo-1615486363977-16f6b3b6df37">
+<p>Haldi (Turmeric)</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38">
-<p>Honey</p>
+<img src="https://images.unsplash.com/photo-1604908554027-54c6d1a04fbb">
+<p>Aata (Wheat Flour)</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1623849968888-1d3c37d399a8">
-<p>Jaggery</p>
+<img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924">
+<p>Pure Honey</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615486363503-8e9d4c0c6e35">
+<p>Jaggery & More</p>
 </div>
 
 </div>
-</div>
 
-<div class="order">
+<br>
+<a class="btn">View All Products</a>
+
+</section>
+
+<section class="order">
 <h2>Order Now</h2>
-<p>Call or WhatsApp to place order</p>
-<a class="btn">WhatsApp Order</a>
-</div>
+<p>Call or WhatsApp us to place your order!</p>
+
+<a class="btn">Order on WhatsApp</a>
+<br><br>
+<a class="btn" style="background:#795548">Email Us</a>
+</section>
 
 <div class="footer">
-© Niloha Farm — Organic Products
+Meerut, Uttar Pradesh | Phone: 9876543219 | Email: nilohafarmmrt@gmail.com
 </div>
 
 </body>
